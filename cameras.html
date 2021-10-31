@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+  <head>
+    <title>Jammal E-store</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Style_CSS/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ae2f07df55.js" crossorigin="anonymous"></script>
+  </head>
+  <body class="w3-light-grey w3-content" style="max-width:1600px">
+    <!-- Sidebar/menu -->
+    <nav class="w3-sidebar w3-collapse w3-red w3-animate-left" 
+         style="z-index:3;width:300px;" 
+         id="mySidebar">
+      <br>
+      <div class="w3-container">
+        <a href="#" onclick="w3_close()" 
+           class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-white" 
+           title="close menu">
+          <i class="fa fa-remove"></i>
+        </a>
+        <img src="./assets/logo/logoipsum-logo-33.svg" style="width:45%;" class="w3-round">
+        <br>
+        <br>
+        <h4>
+          <b>
+            Jammal E-store
+          </b>
+        </h4>
+        <p class="w3-text-grey">
+          Tage Line goes here
+        </p>
+      </div>
+      <div class="w3-bar-block">
+        <a href="./index.html" 
+           onclick="w3_close()" 
+           class="w3-bar-item w3-button w3-padding">
+          <i class="fas fa-laptop w3-margin-right"></i>
+          Laptops
+        </a> 
+        <a href="./computer-parts-and-IT-accessories.html" 
+           onclick="w3_close()" 
+           class="w3-bar-item w3-button w3-padding">
+          <i class="fas fa-network-wired w3-margin-right"></i>
+          Computer Parts & IT/Accessories
+        </a> 
+        <a href="./home-audio-and-speakers.html" 
+           onclick="w3_close()" 
+           class="w3-bar-item w3-button w3-padding">
+          <i class="fas fa-volume-up w3-margin-right"></i>
+          Home Audio & Speakers
+        </a>
+        <a href="./tv-and-video.html" 
+           onclick="w3_close()" 
+           class="w3-bar-item w3-button w3-padding">
+          <i class="fas fa-tv w3-margin-right"></i>
+          TV & Video
+        </a>
+        <a href="./cameras.html" 
+           onclick="w3_close()" 
+           class="w3-bar-item w3-button w3-padding">
+          <i class="fas fa-camera-retro w3-margin-right"></i>
+          Cameras
+        </a>
+      </div>
+      <!--      <div class="w3-panel w3-large">
+              <i class="fa fa-facebook-official w3-hover-opacity"></i>
+              <i class="fa fa-instagram w3-hover-opacity"></i>
+              <i class="fa fa-snapchat w3-hover-opacity"></i>
+              <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+              <i class="fa fa-twitter w3-hover-opacity"></i>
+              <i class="fa fa-linkedin w3-hover-opacity"></i>
+            </div>-->
+    </nav>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" 
+         onclick="w3_close()" 
+         style="cursor:pointer" 
+         title="close side menu" 
+         id="myOverlay">
+    </div>
+    <!-- !PAGE CONTENT! -->
+    <div class="w3-main" style="margin-left:300px">
+      <!-- Header -->
+      <header id="portfolio">
+        <a href="#">
+          <img src="./assets/logo/logoipsum-logo-33.svg" 
+               style="width:65px;" 
+               class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity">
+        </a>
+        <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" 
+              onclick="w3_open()">
+          <i class="fa fa-bars"></i>
+        </span>
+        <div class="w3-container">
+          <h1>
+            <b>
+              Jammal E-store
+            </b>
+          </h1>
+          <div class="w3-section w3-bottombar w3-padding-16">
+            <h2>
+              Cameras
+            </h2>
+          </div>
+        </div>
+      </header>
+      <div>TODO write content</div>
+    </div>
+    <script>
+      // Script to open and close sidebar
+      function w3_open() {
+          document.getElementById("mySidebar").style.display = "block";
+          document.getElementById("myOverlay").style.display = "block";
+      }
+
+      function w3_close() {
+          document.getElementById("mySidebar").style.display = "none";
+          document.getElementById("myOverlay").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
