@@ -1,0 +1,90 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./Style_CSS/index.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+
+		<title>Jammal E-store</title>
+	</head>
+
+	<body>
+		<!-- Sidebar Navigation -->
+		<nav class="sidebar" id="mySidebar">
+			<br />
+			<div class="nav_panel">
+				<a
+					href="#"
+					onclick="w3_close()"
+					class="hide-large to-right jumbo w3-padding w3-hover-white"
+					title="close menu"
+				>
+					<i class="fa fa-remove"></i>
+				</a>
+				<img
+					src="./assets/logo/logoipsum-logo-33.svg"
+					style="width: 45%"
+					class="w3-round"
+				/>
+				<br />
+				<br />
+				<h4>
+					<b> Jammal E-store </b>
+				</h4>
+				<p class="w3-text-grey">Tage Line goes here</p>
+			</div>
+		</nav>
+		<!-- Overlay effect when opening sidebar on small screens -->
+		<div
+			class="w3-overlay hide-large w3-animate-opacity"
+			onclick="w3_close()"
+			style="cursor: pointer"
+			title="close side menu"
+			id="myOverlay"
+		></div>
+		<!-- !PAGE CONTENT! -->
+		<div class="w3-main" style="margin-left: 300px">
+			<!-- Header -->
+			<header id="portfolio">
+				<a href="#">
+					<img
+						src="./assets/logo/logoipsum-logo-33.svg"
+						style="width: 65px"
+						class="w3-circle to-right w3-margin hide-large w3-hover-opacity"
+					/>
+				</a>
+				<span
+					class="w3-button hide-large w3-xxlarge w3-hover-text-grey"
+					onclick="w3_open()"
+				>
+					<i class="fa fa-bars"></i>
+				</span>
+				<div class="nav_panel">
+					<h1>
+						<b> Jammal E-store </b>
+					</h1>
+					<div class="w3-section w3-bottombar w3-padding-16">
+						<h2>Laptops</h2>
+					</div>
+				</div>
+			</header>
+		</div>
+
+		<script>
+			// Script to open and close sidebar
+			function w3_open() {
+				document.getElementById("mySidebar").style.display = "block";
+				document.getElementById("myOverlay").style.display = "block";
+			}
+
+			function w3_close() {
+				document.getElementById("mySidebar").style.display = "none";
+				document.getElementById("myOverlay").style.display = "none";
+			}
+		</script>
+	</body>
+</html>
