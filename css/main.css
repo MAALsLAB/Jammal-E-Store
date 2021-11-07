@@ -1057,14 +1057,14 @@ body {
 	line-height: 2.25rem;
 	line-height: 1.25;
 }
-.card {
+/* .card {
 	--tw-bg-opacity: 1;
 	background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
 	--tw-border-opacity: 1;
 	border-color: rgba(243, 244, 246, var(--tw-border-opacity));
 	border-radius: 0.25rem;
 	border-width: 1px;
-}
+} */
 .card.has-table .card-content {
 	padding: 0;
 }
@@ -1555,4 +1555,99 @@ footer {
 	.lg\:grid-cols-2 {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
+}
+
+.Pcard {
+	position: relative;
+	width: 320px;
+	height: 480px;
+	background: black;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.Pcard::before {
+	content: "";
+	position: absolute;
+	top: -50%;
+	width: 100%;
+	height: 100%;
+	background: #f44336;
+	transform: skewY(345deg);
+	transition: 0.5s;
+}
+
+.Pcard:hover::before {
+	top: -70%;
+	transform: skewY(390deg);
+}
+
+.Pcard::after {
+	content: "CORSAIR";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-weight: 600;
+	font-size: 6em;
+	color: rgba(0, 0, 0, 0.1);
+}
+
+.Pcard .imageBox {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 20px;
+	z-index: 1;
+}
+
+.Pcard .contentBox {
+	position: relative;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	z-index: 2;
+}
+
+.Pcard .contentBox h3 {
+	font-size: 18px;
+	color: white;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+.Pcard .contentBox .price {
+	font-size: 24px;
+	color: white;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.Pcard .contentBox .buy {
+	position: relative;
+	top: 100px;
+	opacity: 0;
+	padding: 10px 30px;
+	margin-top: 15px;
+	color: #000000;
+	text-decoration: none;
+	background: #f44336;
+	border-radius: 30px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	transition: 0.5s;
+}
+
+.Pcard:hover .contentBox .buy {
+	top: 0;
+	opacity: 1;
+}
+
+.mouse {
+	height: 300px;
+	width: auto;
 }
